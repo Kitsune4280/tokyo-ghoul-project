@@ -1,113 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <script src="src/index.js"></script>
-    <title>Tokio Ghoul Project</title>
-</head>
-<body>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="images/tglogo.png" alt="tokyo ghoul logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#panels">Panels</a></li>
-                <li><a href="#quotes">Quotes</a></li>
-            </ul>
-        </nav>
-    </div>
-    
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/styles.css" />
+		<script src="src/index.js"></script>
+		<title>Tokio Ghoul Project</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo">
+				<img src="images/tglogo.png" alt="tokyo ghoul logo" />
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#welcome"><h2>Welcome</h2></a>
+					</li>
+					<li>
+						<a href="#panels"><h2>Panels</h2></a>
+					</li>
+					<li>
+						<a href="#quotes"><h2>Quotes</h2></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <div class="welcome" id="welcome">
-        <div class="welcome-quote">
-            <p id="kaneki-welcome-quote">I  will carry on the last wish of the previous King, and create a world where ghouls and humans can understand each other.</p>
-            <p id="kaneki">Kaneki Ken</p>
-        </div>
-        <div class="welcome-image">
-            <img src="images/kaneki-welcome.png" alt="KanekiKen image" />
-        </div>
-    </div>
+		<!-- <section class="welcome" id="welcome">
+			<div class="welcome__quote">
+				<p id="kaneki-welcome-quote">
+					I will carry on the last wish of the previous King, and create a world
+					where ghouls and humans can understand each other.
+				</p>
+				<p id="kaneki">Kaneki Ken</p>
+			</div>
+			<div class="welcome__image">
+				<img src="images/kaneki-welcome.png" alt="KanekiKen image" />
+			</div>
+		</section>
 
-    <div id="panels">
-        <h1>Panels</h1>
-        <div class="panels-container">
-            <div class="panel active" style="background-image: url(images/3.jpg);">
-            </div>
-    
-            <div class="panel" style="background-image: url(images/4_1.jpg);">
-    
-            </div>
-    
-            <div class="panel" style="background-image: url(images/kaneki-live.jpg);">
-            
-            </div>
-            <div class="panel" style="background-image: url(images/4.jpg);">
-            
-            </div>
-            <div class="panel" style="background-image: url(images/10.jpg);">
-            
-            </div>
-        </div>
-        
-    </div>
+		<section class="panels" id="panels">
+			<h1>Panels</h1>
+			<div class="panels__container">
+				<div
+					class="panel active"
+					style="background-image: url(images/3.jpg)"
+				></div>
 
-    <div id="quotes">
-        <h1>Quotes</h1>
-        <div class="quotes-content">
-            <div class="quote-container">
-                <div class="text-container">
-                    <p>I'm not the protagonist of a novel or anything. 
-                        I'm just a college student who likes to read, 
-                        like you could find anywhere. But... if, for argument's sake, 
-                        you were to write a story with me in the lead role, 
-                        it would certainly be... a tragedy.</p>
-                    <p>Kaneki Ken</p>
-                </div>
-                <div class="image-container">
-                    <img class="qoute-image" src="images/kaneki.png" alt="Kaneki Ken image">
-                </div>
-            </div>
+				<div class="panel" style="background-image: url(images/4_1.jpg)"></div>
 
-            <div class="quote-container">
-                <div class="image-container odd">
-                    <img class="quote-image" src="images/uta.png" alt="Uta image">
-                </div>
-                <div class="text-container">
-                    <p>It can be said it's like 'walking a tight-rope' 
-                        for us to blend into a human place... 
-                        Every second is spent wondering, 'Can I continue or will 
-                        I fall?'... If your feet get tangled along the way you'll 
-                        end up at the bottom of hell... And if you don't cross the
-                         whole distance, in that instant everything will disappear.</p>
-                    <p>Uta</p>    
-                </div>
-            </div>
+				<div
+					class="panel"
+					style="background-image: url(images/kaneki-live.jpg)"
+				></div>
+				<div class="panel" style="background-image: url(images/4.jpg)"></div>
+				<div class="panel" style="background-image: url(images/10.jpg)"></div>
+			</div>
+		</section> -->
 
-            <div class="quote-container">
-                <div class="text-container">
-                    <p>What is right... what is wrong... you can't easily tell the difference. 
-                        That's why you must keep thinking, whether what you are doing is right or not. 
-                        That act itself, alone, can be called right.</p>
-                    <p>Amon Kotarou</p>
-                </div>
-                <div class="image-container">
-                    <img src="images/amon_kotaro.png" alt="Amon Kotarou image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <footer>
-        <p>This page was made for fun and study.</p>
-        <p>I do not own anything here.</p>
-        <p>Go read manga, it's beautiful!</p>
-        <p>Kitsune, 2022</p>
-    </footer>
-    
-</body>
+		<!-- <section id="quotes">
+			<h1>Quotes</h1>
+			<div class="quotes-content">
+				<div class="quote-container">
+					<div class="text-container">
+						<p>
+							I'm not the protagonist of a novel or anything. I'm just a college
+							student who likes to read, like you could find anywhere. But...
+							if, for argument's sake, you were to write a story with me in the
+							lead role, it would certainly be... a tragedy.
+						</p>
+						<p>Kaneki Ken</p>
+					</div>
+					<div class="image-container">
+						<img
+							class="qoute-image"
+							src="images/kaneki.png"
+							alt="Kaneki Ken image"
+						/>
+					</div>
+				</div>
+
+				<div class="quote-container">
+					<div class="image-container odd">
+						<img class="quote-image" src="images/uta.png" alt="Uta image" />
+					</div>
+					<div class="text-container">
+						<p>
+							It can be said it's like 'walking a tight-rope' for us to blend
+							into a human place... Every second is spent wondering, 'Can I
+							continue or will I fall?'... If your feet get tangled along the
+							way you'll end up at the bottom of hell... And if you don't cross
+							the whole distance, in that instant everything will disappear.
+						</p>
+						<p>Uta</p>
+					</div>
+				</div>
+
+				<div class="quote-container">
+					<div class="text-container">
+						<p>
+							What is right... what is wrong... you can't easily tell the
+							difference. That's why you must keep thinking, whether what you
+							are doing is right or not. That act itself, alone, can be called
+							right.
+						</p>
+						<p>Amon Kotarou</p>
+					</div>
+					<div class="image-container">
+						<img src="images/amon_kotaro.png" alt="Amon Kotarou image" />
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- <div class="divider"></div> -->
+		<!-- <footer>
+			<p>This page was made for fun and study.</p>
+			<p>I do not own anything here.</p>
+			<p>Go read manga, it's beautiful!</p>
+			<p>Kitsune, 2022</p>
+		</footer> -->
+	</body>
 </html>

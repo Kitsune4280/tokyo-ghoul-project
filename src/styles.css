@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400;700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+	--font-color-bright: #e6e6e6;
+	--font-color-dark: #595959;
+	--bg-color-dark: #1a1a1a;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+body {
+	font-family: 'Martel', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: var(--bg-color-dark);
+}
+
+header a {
+	color: var(--font-color-bright);
+}
+
+header img {
+	display: none;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
