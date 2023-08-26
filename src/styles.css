@@ -27,12 +27,19 @@ a {
 }
 
 h1 {
+	text-align: center;
 	font-size: 1.5rem;
 	margin: 0 0 20px 10px;
+	color: var(--font-color-dark);
 }
 
 h2 {
 	font-size: 1.1rem;
+}
+
+p {
+	font-size: 0.85rem;
+	text-align: justify;
 }
 
 header {
@@ -67,7 +74,7 @@ nav ul {
 }
 
 section {
-	min-height: 670px;
+	min-height: 400px;
 	margin-bottom: 50px;
 }
 
@@ -127,6 +134,7 @@ section {
 .panel.active {
 	flex: 5;
 }
+
 .panel:nth-of-type(3),
 .panel:nth-of-type(5) {
 	display: none;
@@ -136,13 +144,16 @@ section {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
+	gap: 30px;
 }
 
 .quotes__content {
 	width: 100%;
+	height: 2100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--bg-color-dark);
 }
 
 .quote__container {
@@ -158,19 +169,26 @@ section {
 	align-items: end;
 }
 
+.quote__img-container {
+	height: 60%;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+}
+
 .quote__container img {
 	max-width: 375px;
+	max-height: 100%;
 }
 
 .quote__text {
 	height: 40%;
-	padding: 10px;
+	padding: 10px 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	justify-content: space-evenly;
 	color: var(--font-color-bright);
-	background-color: var(--bg-color-dark);
 }
 
 footer {
@@ -199,11 +217,30 @@ footer p {
 		display: block;
 		max-width: 40%;
 	}
+
+	.welcome {
+		align-items: end;
+	}
+	.uta,
+	.cotarou {
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
 }
 
 @media only screen and (min-width: 768px) {
+	nav {
+		width: 50%;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
 	.welcome {
 		position: relative;
+		justify-content: flex-start;
 	}
 
 	.welcome img {
@@ -219,16 +256,21 @@ footer p {
 		color: var(--bg-color-dark);
 	}
 
+	.quotes__content {
+		height: 900px;
+	}
+
 	.quote__container {
-		height: 350px;
+		height: 300px;
 		flex-direction: row;
 	}
 
 	.quote__container:nth-of-type(2) {
 		flex-direction: row;
 	}
-	.quote__container img {
-		max-width: 50%;
+	.quote__img-container {
+		height: 100%;
+		width: 50%;
 	}
 
 	.quote__text {
@@ -242,4 +284,65 @@ footer p {
 }
 
 @media only screen and (min-width: 992px) {
+	header {
+		height: 100px;
+	}
+
+	.panel:nth-of-type(5) {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	* {
+		font-size: 20px;
+	}
+
+	h1 {
+		margin: 0 0 20px 30px;
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	header {
+		padding: 20px;
+	}
+
+	nav ul {
+		justify-content: flex-end;
+		gap: 35px;
+	}
+
+	.welcome {
+		margin-top: 120px;
+		align-items: end;
+	}
+
+	.welcome img {
+		height: unset;
+	}
+
+	.panels,
+	.quotes {
+		margin-top: 150px;
+	}
+
+	.panel:nth-of-type(3) {
+		display: block;
+	}
+
+	.quote__container {
+		width: 80vw;
+	}
+
+	footer {
+		margin-top: 150px;
+	}
+
+	footer p {
+		font-size: 0.6rem;
+	}
 }
